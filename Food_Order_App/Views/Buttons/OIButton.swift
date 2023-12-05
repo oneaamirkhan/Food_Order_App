@@ -8,11 +8,18 @@
 import SwiftUI
 
 struct OIButton: View {
+    var title: LocalizedStringKey
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Text(title)
+            .font(.title3)
+            .fontWeight(.semibold)
+            .frame(width: 260, height: 50)
+            .foregroundColor(.white)
+            .background(Color.brandPrimary)
+            .cornerRadius(10)
     }
 }
 
 #Preview {
-    OIButton()
+    OIButton(title: "Test Title")
 }

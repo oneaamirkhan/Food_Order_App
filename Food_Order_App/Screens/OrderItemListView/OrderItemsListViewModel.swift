@@ -12,6 +12,8 @@ final class OrderItemsListViewModel: ObservableObject{
     @Published var orderItems: [OrderItem] = []
     @Published var alertItem: AlertItem?
     @Published var isLoading = false
+    @Published var isShowingDetail = false
+    @Published var selectedOrderItem: OrderItem?
     
     func getOrderItems() {
         isLoading = true

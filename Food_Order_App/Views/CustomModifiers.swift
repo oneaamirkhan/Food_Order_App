@@ -5,4 +5,15 @@
 //  Created by عامر خان on 05/12/23.
 //
 
-import Foundation
+import SwiftUI
+
+struct StandardButttonStyle: ViewModifier{
+    
+    func body(content: Content) -> some View {
+        content
+            .buttonStyle(.bordered)
+            .tint(.brandPrimary)
+            .controlSize(.large)
+    }
+}
+
